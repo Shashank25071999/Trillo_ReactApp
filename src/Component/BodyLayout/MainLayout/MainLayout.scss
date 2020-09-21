@@ -1,0 +1,100 @@
+.MainLayout{
+    flex-grow: 1;
+    background-color: var(--color-grey-light-1);
+    
+    
+}
+
+.ImageContainer{
+    display: flex;
+    
+
+    &__image{
+        width: 33.33%;
+        flex: 1;
+        display: block;
+        
+    }
+
+    
+}
+
+.OverviewContainer{
+    display: flex;
+    align-items: center;
+    border-bottom: .1rem solid var(--color-grey-light-2);
+    
+    &__Heading{
+        letter-spacing: .4rem;
+        margin-left: 1rem;
+        font-size: 2.25rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__Star{
+        display: flex;
+        margin-right: auto;
+        margin-left: 2rem;
+        align-self: center;
+        
+    }
+
+    &__Location{
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    &__InlineButton{
+        border: none;
+        background-color: transparent;
+        margin-left: .7rem;
+        padding-bottom: .1rem;
+        border-bottom: .2rem solid currentColor;
+        color: var(--color-primary);
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+            color: var(--color-grey-dark-2);
+        }
+
+        &:focus{
+            animation: pulse 1s infinite;
+            outline: none;
+        }
+    }
+
+    &__Rating{
+        padding: 1rem;
+        background-color: var(--color-primary-dark);
+        align-self: stretch;
+        color: #fff;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__Rate{
+            font-size: 2rem;
+        }
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50%{
+        transform: scale(1.25);
+        box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: .25);
+    }
+
+    100%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+}

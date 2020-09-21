@@ -1,0 +1,82 @@
+.Header{
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--color-grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo{
+        height: 3.25rem;
+        margin-left: 2rem;
+    }
+
+    &__searchbox{
+        display: flex;
+        flex: 0 0 40%;
+        border-radius: 30rem;
+       background-color: #fff;
+       
+
+        &__logo{
+            height: 2rem;
+            width: 2rem;
+            margin-left: -2.9rem;
+            border: none;
+            align-self: center;
+            background-color: transparent;
+        }
+    }
+
+
+    &__nav{
+        display: flex;
+        height: 100%;
+
+        &__box{
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-grey-light-1);
+            padding: 2rem;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                background-color: var(--color-grey-light-3);
+            }
+        }
+
+        
+
+        &__icon{
+            height: 2.25rem;
+            width: 2.25rem;
+            
+
+            &__span{
+                position:absolute;
+                border-radius: 50%;
+                top:1.5rem;
+                right: 1.5rem;
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                background-color: var(--color-primary);
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+        }
+
+
+        &__userphoto{
+            width: 3.75rem;
+            height: 3.75rem;
+            border-radius: 50%;
+            
+        }
+    }
+
+
+    
+}
+
