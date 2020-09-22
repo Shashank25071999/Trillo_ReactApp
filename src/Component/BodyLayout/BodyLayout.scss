@@ -1,4 +1,14 @@
+@import '../../Mixin/Mixin.scss';
 .BodyLayout{
     display: flex;
-    
+
+    @include respond(largedevice){
+        padding-top: 6.95rem;
+        
+    }
+    @include respond(smalldevice){
+        flex-direction: column;
+        height: 100vh;
+    }
+
 }

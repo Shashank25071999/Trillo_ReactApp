@@ -1,6 +1,34 @@
+@import '../../../../../Mixin/Mixin.scss';
 .ReviewSection{
     flex: 0 0 40%;
-    background-color: #fff;
     margin-left: 4.5rem;
     box-sizing: border-box;
+
+      
+    @include respond(mediumdevice){
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+}
+
+.button__container{
+    margin-top: auto;
+
+    @include respond(mediumdevice){
+        margin-top: 0;
+        background-color: #fff;
+    }
+
+    @include respond(smallestdevice){
+        text-align: center;
+    }
+}
+
+.button{
+    
+    background-color: transparent;
+    border: none;
+    color: var(--color-primary);
 }

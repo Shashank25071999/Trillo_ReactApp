@@ -1,0 +1,33 @@
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==smallestdevice{
+      @media (max-width:35.625em) {//570px/16=35.625
+        @content
+      };
+    };
+
+    @if $breakpoint==smalldevice{
+        @media (max-width:52.875em) {//846px/16=52.875em
+          @content
+        };
+      };
+
+      @if $breakpoint==mediumdevice{
+        @media (max-width:64.875em) {//1038px/16=64.875em
+          @content
+        };
+      };
+
+      @if $breakpoint==largedevice{
+        @media (max-width:75.9375em) {  //1215px/16=75.9375em
+          @content
+        };
+      };
+
+      @if $breakpoint==largestdevice{
+        @media (max-width:60rem) {
+          @content
+        };
+      };
+  }

@@ -13,8 +13,8 @@ const SideBar:React.FunctionComponent<Props>=(Props)=>{
 
     return (
         <div className="SideBar">
-            <nav>
-            <ul>
+            <nav className="SideBar__nav">
+            <ul className="SideBar__nav__ul">
                 <SideNavItem img={homeimage} label="home" alt="home"></SideNavItem>
                 <SideNavItem img={aircraft} label="airplane" alt="airplane"></SideNavItem>
                 <SideNavItem img={key} label="key" alt="key"></SideNavItem>

@@ -1,7 +1,16 @@
+@import '../../../Mixin/Mixin.scss';
 .MainLayout{
     flex-grow: 1;
     background-color: var(--color-grey-light-1);
     
+    @include respond(largedevice){
+        margin-left: 24.22rem;
+        
+    }
+
+    @include respond(smalldevice){
+        margin-left: 0;
+    }
     
 }
 
