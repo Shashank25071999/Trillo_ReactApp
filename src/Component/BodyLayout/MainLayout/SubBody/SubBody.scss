@@ -1,0 +1,61 @@
+@import '../../../../Mixin/Mixin.scss';
+
+.OverallContainer{
+    display: flex;
+    flex-direction: column;
+    
+    @include respond(smallestdevice){
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.SubBody{
+    display: flex;
+    background-color: var(--color-grey-light-2);
+    padding: 4.5rem;
+    
+    @include respond(mediumdevice){
+        padding:0;
+    }
+
+    @include respond(smallestdevice){
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.ctcsection{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__para{
+        font-size: 2rem;
+        text-align: center;
+        padding: 1.6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__bookingbutton{
+        border: none;
+        width: 30%;
+        background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+        padding: 2.5rem;
+        text-transform: uppercase;
+        border-radius: 100px;
+        cursor: pointer;
+        color: #fff;
+        margin-bottom: 3rem;
+
+        &:focus{
+            outline: none;
+        }
+    }
+}
+

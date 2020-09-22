@@ -1,0 +1,26 @@
+@import '../../../../Mixin/Mixin.scss';
+.SideNavItem{
+    display: flex;
+    padding: 2rem;
+    justify-content: start;
+    list-style: none;
+
+    &:hover{
+        background-color: var(--color-primary);
+    }
+
+    &__img{
+        
+    }
+
+    &__list{
+        align-self: center;
+        color: #fff;
+        margin-left: 1rem;
+        text-transform:capitalize;
+        font-size: 1.4rem;
+    }
+    @include respond(smalldevice){
+        flex: 1;
+    }
+}

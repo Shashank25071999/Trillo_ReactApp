@@ -1,0 +1,18 @@
+@import '../../Mixin/Mixin.scss';
+
+.LayoutContainer{
+    max-width: 120rem;
+    margin: 8rem auto;
+    min-height: 50rem;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+
+    @include respond(largedevice){
+        margin: 0;
+    }
+
+    @include respond(smalldevice){
+        height: 100vh;
+        background-color: #fff;
+    }
+}

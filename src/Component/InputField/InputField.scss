@@ -1,0 +1,15 @@
+.InputField{
+    padding: 2rem;
+    width: 90%;
+    border-radius: 30rem;
+    border: none;
+    height: 1rem;
+    background-color: var(--color-grey-light-1);
+    
+    
+    &:focus{
+        outline: none;
+        background-color: var(--color-grey-light-3);
+        width: 100%;
+    }
+}

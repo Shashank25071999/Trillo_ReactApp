@@ -1,0 +1,22 @@
+.Recommendation{
+    display: flex;
+    align-items: center;
+
+    &__para{
+        margin-right: auto;
+        font-size: 1.4rem;
+    }
+
+    &__image{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: .3rem solid #fff;
+        &:not(:first-child){
+            margin-left: -1.15rem;
+            
+        }
+        
+    }
+}
